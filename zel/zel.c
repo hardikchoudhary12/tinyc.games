@@ -218,7 +218,9 @@ void key_move(int down)
                 case SDLK_SPACE:
                         drawclip = !drawclip;
                         break;
-                case SDLK_z:
+                //cheatcode
+		case SDLK_z:
+			
                 case SDLK_x:
                         if(player[0].state == PL_NORMAL)
                         {
@@ -226,6 +228,8 @@ void key_move(int down)
                                 player[0].delay = 16;
                         }
                         break;
+		case SDLK_c:
+			player[0].hp = 20; break;
                 case SDLK_ESCAPE:
                         exit(0);
         }
